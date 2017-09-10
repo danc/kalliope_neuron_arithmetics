@@ -14,7 +14,7 @@ kalliope install --git-url https://github.com/1account/kalliope_neuron_arithmeti
 
 | parameter | required | default | choices                     | comment                                         |
 |-----------|----------|---------|-----------------------------|-------------------------------------------------|
-| maxresult | NO       | 100     |                             | n1 operator n2 < maxresult                      |
+| maxresult | YES      | None    |                             | n1 operator n2 < maxresult                      |
 | operator  | NO       | Random  |                             | "+", "-", "\*" or "/"                           |
 
 ## Return Values
