@@ -1,0 +1,8 @@
+{% set operator_spoken = {
+    "+": "plus", 
+    "-": "minus", 
+    "*": "times", 
+    "/": "divided by" 
+    }[operator] | default("") -%}
+
+What is {{n_1}} {{operator_spoken}} {{n_2}}?

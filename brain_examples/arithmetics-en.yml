@@ -1,0 +1,35 @@
+---
+  - name: "arithmetics"
+    signals:
+      - order: "Ask me some math"
+    neurons:
+     - arithmetics:
+          maxresult: "100"
+          operator: "+"
+          file_template: templates/arithmetics_en_template.j2
+          kalliope_memory:
+            result: "{{result}}"
+     - neurotransmitter:
+          from_answer_link:
+            - synapse: "synapse-correct"
+              answers:
+                - "I guess {{ kalliope_memory['result'] }}"
+          default: "synapse-not-correct"
+
+  - name: "synapse-correct"
+    signals:
+      - order: "synapse-correct"
+    neurons:
+      - say:
+          message: 
+              - "Superb!"
+              - "Perfect!"
+              - "Correct!"
+
+  - name: "synapse-not-correct"
+    signals:
+      - order: "synapse-not-correct"
+    neurons:
+      - say:
+          message: 
+              - "That is wrong, {{ kalliope_memory['result'] }} is the correct answer"

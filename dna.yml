@@ -1,0 +1,11 @@
+---
+  name: "arithmetics"
+  type: "neuron"
+  author: "1account"
+
+  kalliope_supported_version:
+    - 0.4.6
+
+  tags:
+    - "arithmetics"
+    - "children"
