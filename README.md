@@ -21,7 +21,7 @@ kalliope install --git-url https://github.com/1account/kalliope_neuron_arithmeti
 
 | Name                        | Description                                | Type   | sample                 |
 |-----------------------------|--------------------------------------------|--------|------------------------|
-| result                      | n1 operator n2                             | String | 7 plus 5 -> "12"       |
+| result                      | n1 operator n2                             | String | 7 + 5 -> 12            |
 | operator                    | Operator                                   | String | "+", "-", "\*" or "/"  |                   
 
 ## Synapses example
