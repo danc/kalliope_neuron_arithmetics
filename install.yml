@@ -1,0 +1,6 @@
+- name: kalliope artihmetics neuron install
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: true
+
