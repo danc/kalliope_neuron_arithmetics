@@ -1,5 +1,3 @@
-import pyowm
-
 from kalliope.core.NeuronModule import NeuronModule, MissingParameterException
 from random import randint
 from math import sqrt, ceil
