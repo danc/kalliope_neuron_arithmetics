@@ -2,7 +2,7 @@
 
 ## Synopsis 
 
-Kalliope neuron asks some random basic integer arithmetics like n1 operator n2 where n1, n2 are integers and operator is "+", "-", "\*" or "/" such that result of n1 operator n2 is less than a given number maxresult.
+Kalliope neuron which asks some random basic integer arithmetics like n1 operator n2 where n1, n2 are integers and operator is "+", "-", "\*" or "/" such that result of n1 operator n2 is less than a given number maxresult.
 
 ## Installation
 
